@@ -68,3 +68,86 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#--------------------------------------------------------------------------------------------------------------
+# Staj-Proje-001: Hava Durumu Uygulaması
+
+## Açıklama
+
+Bu proje, bir hava durumu uygulaması oluşturmayı hedeflemektedir.
+
+## Son Tarih
+
+05.11.2024
+
+## Problem Tanımı
+Portföylerimize yeni bir proje ekliyoruz. Bu nedenle, siz ve meslektaşlarınız projede çalışmaya başladınız.
+
+## Proje Yapısı
+
+```
+Weather App (folder)
+|
+├── public
+│     └── index.html
+├── src
+│    ├── components
+│    │       ├── cards
+│    │            ├── Card.css
+│    │            └── Card.jsx
+│    │       
+│    ├── images
+│    │       └── logo.png
+|    |
+|    |
+│    ├── App.js
+│    ├── App.css
+│    ├── index.js
+│    └── index.css
+|
+├── package.json
+├── package-lock.lock
+└── README.md
+
+```
+
+
+## Beklenen Çıktı
+
+![Proje 001 Ekran Görüntüsü](weather-app.gif)
+
+## Hedef
+
+ReactJS kullanarak bir Hava Durumu Uygulama Projesi oluşturun.
+
+### Projenin sonunda, aşağıdaki konular ele alınacaktır;
+
+- HTML
+- CSS
+- JS
+- ReactJS
+- Bootstrap
+- Fetch API
+
+### Projenin sonunda, öğrenciler;
+
+- HTML & CSS & JS & ReactJS içinde kodlama becerilerini geliştirebilecek.
+- OpenWeather API'den veri almak için fetch yapısını kullanabilecek.
+
+## Çözüme Giden Adımlar
+
+1. `npx create-react-app weather-app` kullanarak React Uygulaması oluşturun.
+2. OpenWeather API'de bir hesap oluşturun ve ücretsiz bir API Erişim Anahtarı alın.
+3. API'den hava durumu bilgisi almak için bir fonksiyon tanımlayın: 
+    `https://api.openweathermap.org/data/2.5/weather?q=${place}&appid=${tokenKey}&units=metric&lang=tr`
+    Örnek URL: `https://api.openweathermap.org/data/2.5/weather?q=Ankara&appid=${tokenKey}&units=metric&lang=tr`
+    (tokenKey, erişim anahtarınızla değişecektir)
+4. Hava Durumu ikonlarina ulasmak icin hava durumu verisi icerisindeki weather listesi icerisindeki icon datasini kullanabilirsiniz.
+    Ornek src: `http://openweathermap.org/img/wn/${icon}@2x.png`;
+5. Bir şehir için Hava Durumu Verilerini görüntülemek için bir kart bileşeni oluşturun.
+6. Gösterim için aranan şehirleri bir liste içinde kaydedin.
+
+## Notlar
+
+**<p align="center">&#9786; Mutlu Kodlamalar &#9997;</p>**
+
+
